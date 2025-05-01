@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treasure trove of history</title>
-	<link rel="stylesheet" href="styles/styles.css">
+    <title>HistoryTube</title>
+    <meta name="description" content="Інформаційний сайт про скарби історії: факти, події, артефакти та цікаві знахідки.">
+    <meta name="keywords" content="історія, археологія, минуле, артифакти">
+    <meta name="author" content="Валерія Устенко">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>Treasure trove of history</h1>
+        <h1>HistoryTube</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
     </header>
-    <main>
-        <p>Тут буде контент</p>
+
+  <nav class="sidebar">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+  <main class="container">
+        <article class="video-card">
+            <img src="history-thumbnail.jpg" alt="Історичне відео">
+            <h2>Стародавній світ</h2>
+            <p>Досліджуйте артефакти та події минулого!</p>
+        </article>
+        <article class="video-card">
+            <img src="history-thumbnail2.jpg" alt="Історичне відео">
+            <h2>Середньовіччя</h2>
+            <p>Лицарі, битви та неймовірні знахідки.</p>
+        </article>
     </main>
+
     <footer>
         <p>&copy; 2025. Всі права захищені.</p>
     </footer>
 </body>
 </html>
+
