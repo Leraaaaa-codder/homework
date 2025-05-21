@@ -56,7 +56,6 @@ header .biger-box .title {
   width: 200px;
   color: white;
   font-family: "Playwrite DK Loopet", cursive;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 header .biger-box .big-box {
@@ -114,7 +113,7 @@ header menu {
   display: flex;
   justify-content: space-around;
 }
-header menu div {
+header menu li {
   color: white;
   font-size: 20px;
 }
