@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HistoryTube</title>
-    <meta name="description" content="Інформаційний сайт про скарби історії: факти, події, артефакти та цікаві знахідки.">
-    <meta name="keywords" content="історія, археологія, минуле, артифакти">
-    <meta name="author" content="Валерія Устенко">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Всесвітня історія, цікаві факти про історію, артефакти">
+  <meta name="keywords" content="Історія">
+  <meta name="author" content="Устенко Валерія">
+  <title>Historytube</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>HistoryTube</h1>
-        <div class="search-container">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search">🔍</i></button>
+
+  <!-- Гамбургер меню -->
+  <input type="checkbox" id="burger-toggle"/>
+  <div class="hamburger-container">
+    <label for="burger-toggle">
+      <img src="images/menu.svg" alt="Меню" class="hamburger-icon">
+    </label>
+  </div>
+
+  <header>
+    <div class="biger-box">
+      <div class="title">HistoryTube</div>
+      <div class="big-box">
+        <div class="search-bar">
+          <div class="search-input">Пошук...</div>
+		  <a href="https://www.google.com/"><div class="search-icon"></div></a>
         </div>
-    </header>
+        <div class="little-box">
+          <div class="bell"></div>
+          <div class="user"></div>
+        </div>
+      </div>
+    </div>
+    <menu>
+      <div>Усе</div>
+      <div>Рекомендовані</div>
+      <div>Цікавинки</div>
+      <div>Що нового?</div>
+      <div>Економіка</div>
+    </menu>
+  </header>
 
-  <nav class="sidebar">
-        <ul>
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-    </nav>
-  <main class="container">
-        <article class="video-card">
-            <img src="history-thumbnail.jpg" alt="Історичне відео">
-            <h2>Стародавній світ</h2>
-            <p>Досліджуйте артефакти та події минулого!</p>
-        </article>
-        <article class="video-card">
-            <img src="history-thumbnail2.jpg" alt="Історичне відео">
-            <h2>Середньовіччя</h2>
-            <p>Лицарі, битви та неймовірні знахідки.</p>
-        </article>
-    </main>
+  <main>
+    <div class="sidebar">
+	<ul>
+      <li>Головна</li>
+      <li>Підписки</li>
+      <li>Бібліотека</li>
+      <li>Історія</li>
+      <li>Відео</li>
+      <li>Статті</li>
+	  </ul>
+    </div>
 
-    <footer>
-        <p>&copy; 2025. Всі права захищені.</p>
-    </footer>
+    <div class="main-grid">
+      <div class="big-section">
+        <div class="the-big-title"><strong>Історія:</strong></div>
+
+        <div class="content-menu">
+          <div class="small-title">Стародавній світ</div>
+          <div class="contents">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+
+        <div class="content-menu">
+          <div class="small-title">Середньовіччя</div>
+          <div class="contents">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div> 
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </main>
+
+  <footer></footer>
 </body>
-</html>
-
+</html>  
