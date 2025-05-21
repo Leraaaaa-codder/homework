@@ -69,6 +69,9 @@ header .biger-box .big-box .search-bar {
   background-color: #D9D9D9;
   width: 70%;
   height: 100%;
+  outline-width:3px;
+  outline-color:#938D8D;
+  outline-style:solid;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
