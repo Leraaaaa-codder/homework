@@ -1,0 +1,38 @@
+@media (max-width: 800px) {
+    header {
+        .biger-box {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        menu {
+            flex-direction: column !important;
+            align-items: center !important;
+
+            li {
+                margin: 2px !important;
+            }
+        }
+    }
+    main {
+        margin-top: 300px !important;
+
+        .contents {
+            grid-template-columns: repeat(2, 1fr) !important;
+            height: 300px !important;
+        }
+    }
+    .sidebar {
+        margin-top: -30px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        .biger-box {
+            .big-box {
+                justify-content: center !important;
+            }
+        }
+    }
+}

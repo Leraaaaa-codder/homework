@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@media (max-width: 800px) {
+  header .biger-box {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  header menu {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  header menu li {
+    margin: 2px !important;
+  }
+  main {
+    margin-top: 300px !important;
+  }
+  main .contents {
+    grid-template-columns: repeat(2, 1fr) !important;
+    height: 300px !important;
+  }
+  .sidebar {
+    margin-top: -30px !important;
+  }
+}
+@media (max-width: 500px) {
+  header .biger-box .big-box {
+    justify-content: center !important;
+  }
+}
+.footer {
+  background-color: #6d4c41;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer-content .footer-logo {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.footer .footer-content .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.footer .footer-content .footer-links li {
+  list-style: none;
+  margin: 0 10px;
+}
+.footer .footer-content .footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer .footer-content .footer-links li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-content .footer-copy {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* Гамбургер меню */
+.hamburger-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+main .sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#burger-toggle:checked ~ main .sidebar {
+  transform: translateX(0);
+}
+
+header {
+  background-color: #6d4c41;
+  height: auto;
+  padding: 20px 10px 30px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+}
+header .biger-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .biger-box .title {
+  font-size: 30px;
+  width: 200px;
+  color: white;
+  font-family: "Playwrite DK Loopet", cursive;
+}
+header .biger-box .big-box {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .biger-box .big-box .search-bar {
+  background-color: #D9D9D9;
+  width: 70%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  outline: 3px solid #938D8D;
+}
+header .biger-box .big-box .search-bar .search-input {
+  margin: 10px;
+  color: #938D8D;
+}
+header .biger-box .big-box .search-bar .search-icon {
+  width: 40px;
+  height: 40px;
+  background: url("../images/find.svg") center no-repeat;
+  border-left: solid #938D8D;
+  cursor: pointer;
+}
+header .biger-box .big-box .little-box {
+  display: flex;
+}
+header .biger-box .big-box .little-box .bell, header .biger-box .big-box .little-box .user {
+  background-size: cover;
+}
+header .biger-box .big-box .little-box .bell {
+  background-image: url("../images/bell.svg");
+  margin: 5px 20px 0 10px;
+  width: 30px;
+  height: 30px;
+}
+header .biger-box .big-box .little-box .user {
+  background-image: url("../images/user.svg");
+  width: 40px;
+  height: 40px;
+}
+header menu {
+  background-color: #6d4c41;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+header menu li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 110px;
+}
+main .main-grid {
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+main .main-grid .big-section .the-big-title {
+  font-family: "Playwrite DK Loopet", cursive;
+  font-size: 30px;
+}
+main .main-grid .big-section .content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-grid .big-section .content-menu .small-title {
+  font-size: 20px;
+  color: #5c3217;
+  padding-top: 40px;
+}
+main .main-grid .big-section .content-menu .contents {
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+main .main-grid .big-section .content-menu .contents .box {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+
+.sidebar {
+  background-color: #D9D9D9;
+  width: 150px;
+  font-size: 20px;
+  color: #5c3217;
+  position: sticky;
+  top: 110px;
+  height: calc(100vh - 110px);
+  margin-left: -10px;
+}
+.sidebar li {
+  list-style: none;
+  margin-left: -20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

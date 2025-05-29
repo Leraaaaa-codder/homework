@@ -1,0 +1,16 @@
+.sidebar {
+    background-color: #D9D9D9;
+    width: 150px;
+    font-size: 20px;
+    color: #5c3217;
+    position: sticky;
+    top: 110px;
+    height: calc(100vh - 110px);
+    margin-left: -10px;
+
+
+    li {
+        list-style: none;
+        margin-left: -20px;
+    }
+}
