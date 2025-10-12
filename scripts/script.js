@@ -14,3 +14,15 @@ console.log("Фон body:", bodyBg);
 const h1 = document.querySelector("h1");
 const h1FontSize = h1 ? getComputedStyle(h1).fontSize : "немає h1";
 console.log("Розмір шрифту h1:", h1FontSize);
+// Зміна фону елементів при наведенні
+document.querySelectorAll("*").forEach(el => {
+  let originalColor = getComputedStyle(el).backgroundColor;
+
+  el.addEventListener("mouseenter", () => {
+    el.style.backgroundColor = "red";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    el.style.backgroundColor = originalColor;
+  });
+});
