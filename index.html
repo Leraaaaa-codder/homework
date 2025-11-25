@@ -1,99 +1,112 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Всесвітня історія, цікаві факти про історію, артефакти">
-  <meta name="keywords" content="Історія">
-  <meta name="author" content="Устенко Валерія">
-  <title>Historytube</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Всесвітня історія, цікаві факти про історію, артефакти">
+  <meta name="keywords" content="Історія">
+  <meta name="author" content="Устенко Валерія">
+  <title>Historytube</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-  <!-- Гамбургер меню -->
-  <input type="checkbox" id="burger-toggle"/>
-  <div class="hamburger-container">
-    <label for="burger-toggle">
-      <img src="images/menu.svg" alt="Меню" class="hamburger-icon">
-    </label>
-  </div>
+    <input type="checkbox" id="burger-toggle"/>
+  <div class="hamburger-container">
+    <label for="burger-toggle">
+      <img src="images/menu.svg" alt="Меню" class="hamburger-icon">
+    </label>
+  </div>
 
-  <header>
-    <div class="biger-box">
-      <h1 class="title">HistoryTube</h1>
-      <div class="big-box">
-        <div class="search-bar">
-          <p class="search-input">Пошук...</p>
-		  <a href="https://www.google.com/"><div class="search-icon"></div></a>
+  <header>
+    <div class="biger-box">
+      <h1 class="title">HistoryTube</h1>
+      <div class="big-box">
+        <div class="search-bar">
+          <p class="search-input">Пошук...</p>
+      <a href="https://www.google.com/"><div class="search-icon"></div></a>
+        </div>
+        <div class="little-box">
+          <div class="bell"></div>
+          <div class="user"></div>
+        </div>
+      </div>
+    </div>
+    <menu>
+      <li>Усе</li>
+      <li>Рекомендовані</li>
+      <li>Цікавинки</li>
+      <li>Що нового?</li>
+      <li>Економіка</li>
+    </menu>
+  </header>
+
+  <main>
+    <div class="sidebar">
+  <ul>
+      <li><p>Головна</p></li>
+      <li><p>Підписки</p></li>
+      <li><p>Бібліотека</p></li>
+      <li><p>Історія</p></li>
+      <li><p>Відео</p></li>
+      <li><p>Статті</p></li>
+    </ul>
+    </div>
+
+    <div class="main-grid">
+        <div class="api-block">
+            <h2 class="the-big-title" style="border-bottom: none;">
+                Рекомендація дня: Лисиця 🦊 (Async/Await)
+            </h2>
+            <div class="fox-content-box">
+                <p><strong>Статус:</strong> <span id="image-status">Натисніть кнопку</span></p>
+                <img id="fox-image" src="" alt="Рандомна лисиця" style="max-width: 100%; height: auto; border-radius: 8px; margin-top: 10px; display: none;">
+                <p class="mt-2">URL: <span id="image-url" style="font-size: 0.9rem;"></span></p>
+                <button id="fetch-button" class="btn btn-sm" style="background-color: #6d4c41; color: white;">
+                    Завантажити лисицю!
+                </button>
+                <div id="error-message" class="mt-2" style="color: #dc3545; display: none; font-size: 0.8rem;"></div>
+            </div>
         </div>
-        <div class="little-box">
-          <div class="bell"></div>
-          <div class="user"></div>
-        </div>
-      </div>
-    </div>
-    <menu>
-      <li>Усе</li>
-      <li>Рекомендовані</li>
-      <li>Цікавинки</li>
-      <li>Що нового?</li>
-      <li>Економіка</li>
-    </menu>
-  </header>
+              <div class="big-section">
+        <h2 class="the-big-title"><strong>Історія:</strong></h2>
 
-  <main>
-    <div class="sidebar">
-	<ul>
-      <li><p>Головна</p></li>
-      <li><p>Підписки</p></li>
-      <li><p>Бібліотека</p></li>
-      <li><p>Історія</p></li>
-      <li><p>Відео</p></li>
-      <li><p>Статті</p></li>
-	  </ul>
-    </div>
+        <div class="content-menu">
+          <h3 class="small-title">Стародавній світ</h3>
+          <div class="contents">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
 
-    <div class="main-grid">
-      <div class="big-section">
-        <h2 class="the-big-title"><strong>Історія:</strong></h2>
+        <div class="content-menu">
+          <div class="small-title">Середньовіччя</div>
+          <div class="contents">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div> 
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </main>
 
-        <div class="content-menu">
-          <h3 class="small-title">Стародавній світ</h3>
-          <div class="contents">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-          </div>
-        </div>
-
-        <div class="content-menu">
-          <div class="small-title">Середньовіччя</div>
-          <div class="contents">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div> 
-          </div>
-        </div>
-      </div> 
-    </div> 
-  </main>
-
-  <footer class="footer">
-  <div class ="footer-content" >
-  <div class="footer-logo">HistoryTube</div>
-   <ul class="footer-links">
-   <li><a href="#">Контакти</a></li>
-   <li><a href="#">Політика конфіденційності</a></li>
-   <li><a href="#">FAQ</a></li>
-   </ul>
-   <div class="footer-copy">© 2025 HistoryTube. Усі права захищені.</div>
-   <div>
-  </footer>
-  <script src="scripts/script.js"></script>
+  <footer class="footer">
+  <div class ="footer-content" >
+  <div class="footer-logo">HistoryTube</div>
+   <ul class="footer-links">
+   <li><a href="#">Контакти</a></li>
+   <li><a href="#">Політика конфіденційності</a></li>
+   <li><a href="#">FAQ</a></li>
+   </ul>
+   <div class="footer-copy">© 2025 HistoryTube. Усі права захищені.</div>
+   <div>
+  </footer>
+  <script src="scripts/scriptapi.js"></script>
 </body>
-</html>  
+</html>
