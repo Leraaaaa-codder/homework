@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phoneInput = document.getElementById('phone');
     const form = document.getElementById('loginForm');
 
-    //Регулярні вирази
+    
     const loginRegExp = /^[a-zA-Z0-9_-]{3,20}$/; 
     const emailRegExp = /.+@.+\..+/; 
     const phoneRegExp = /\d{10}/; 
@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const value = loginInput.value.trim();
         const feedback = document.getElementById('login-feedback');
         
-        // search і чи вона повна match
         if (value.search(loginRegExp) !== -1 && value.match(loginRegExp) && value.match(loginRegExp)[0].length === value.length) {
             loginInput.classList.remove('is-invalid');
             loginInput.classList.add('is-valid');
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             feedback.className = 'validation-message'; 
             return true;
         } else {
-            // Якщо неправильно були введені дані - повідомлення про помилку
+         
             loginInput.classList.remove('is-valid');
             loginInput.classList.add('is-invalid');
             feedback.textContent = 'ПОМИЛКА! Логін має бути 3-20 символів (латинські літери, цифри).';
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const value = emailInput.value.trim();
         const feedback = document.getElementById('email-feedback');
         
-        // Користуємось .match() та .search() для перевірки
+       
         if (value.match(emailRegExp) && value.search(emailRegExp) === 0) {
             emailInput.classList.remove('is-invalid');
             emailInput.classList.add('is-valid');
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const value = phoneInput.value.trim();
         const feedback = document.getElementById('phone-feedback');
         
-        // шукаємо 10 цифр у полі за допомогою match()
+     
         if (value.match(phoneRegExp) && value.match(phoneRegExp)[0].length === 10) {
             phoneInput.classList.remove('is-invalid');
             phoneInput.classList.add('is-valid');
@@ -72,14 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Прив'язка
+    
     loginInput.addEventListener('blur', checkLogin);
     emailInput.addEventListener('blur', checkEmail);
     phoneInput.addEventListener('blur', checkPhone);
     
     
     
-    // Очищення логіну
+    
    
     
     const forbiddenCharsRegExp = /[^a-zA-Z0-9_-]/g;
@@ -88,10 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentValue = loginInput.value;
         const feedback = document.getElementById('login-feedback');
         
-        // replace()
+       
         const cleanedValue = currentValue.replace(forbiddenCharsRegExp, '');
         
-        // Якщо символи були видалені, оновлюємо поле
+        
         if (currentValue !== cleanedValue) {
             loginInput.value = cleanedValue;
             loginInput.classList.remove('is-valid'); 
@@ -102,13 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
  
             feedback.style.color = ''; 
             
-            //Переввірка
+            
             checkLogin(); 
         }
     });
 
 
-    // Запобігання відправки
+    
     form.addEventListener('submit', (event) => {
         const isLoginValid = checkLogin();
         const isEmailValid = checkEmail();
