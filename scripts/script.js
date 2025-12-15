@@ -39,6 +39,7 @@ setTimeout(() => {
 
  
   const boxes = document.querySelectorAll(".content-menu .contents .box");
+  const fragment = document.createDocumentFragment();
 
   
   imagesUrl.forEach((url, index) => {
@@ -60,7 +61,8 @@ setTimeout(() => {
         img.style.objectFit = "cover";
         img.style.borderRadius = "10px";
 
-        // Вставляємо <img> в один із чотирьох контейнерів .box
+    
+
         boxes[index].appendChild(img);
       }
     }, index * 1000); 
